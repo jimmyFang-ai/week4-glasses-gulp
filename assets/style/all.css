@@ -1,23 +1,944 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: 0 auto;
+  vertical-align: middle; }
+
+body {
+  font-family: 'Roboto','Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+.container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto; }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 540px; } }
+
+.fs-1 {
+  font-size: 4rem; }
+
+.fs-2 {
+  font-size: 3rem; }
+
+.fs-3 {
+  font-size: 2rem; }
+
+.fs-4 {
+  font-size: 1.5rem; }
+
+.fs-5 {
+  font-size: 1.25rem; }
+
+.fs-6 {
+  font-size: 1rem; }
+
+.fs-sm {
+  font-size: 14px; }
+
+.fs-m {
+  font-size: 28px; }
+
+@media (max-width: 768px) {
+  .fs-md-2 {
+    font-size: 3rem; }
+  .fs-md-3 {
+    font-size: 2rem; }
+  .fs-md-4 {
+    font-size: 1.5rem; }
+  .fs-md-5 {
+    font-size: 1.25rem; }
+  .fs-md-6 {
+    font-size: 1rem; }
+  .fs-md-sm {
+    font-size: 14px; } }
+
+@media (max-width: 576px) {
+  .fs-sm-3 {
+    font-size: 2rem; }
+  .fs-sm-4 {
+    font-size: 1.5rem; }
+  .fs-sm-5 {
+    font-size: 1.25rem; }
+  .fs-sm-6 {
+    font-size: 1rem; }
+  .fs-sm-sm {
+    font-size: 14px; } }
+
+.lh-base {
+  line-height: 1.5; }
+
+.lh-sm {
+  line-height: 1.25; }
+
+.text-start {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-end {
+  text-align: right; }
+
+.fw-bold {
+  font-weight: bold; }
+
+.fst-italic {
+  font-style: italic; }
+
+.w-24 {
+  width: 24%; }
+
+.w-30 {
+  width: 30%; }
+
+.w-31 {
+  width: 31%; }
+
+.w-33 {
+  width: 33%; }
+
+.w-40 {
+  width: 40%; }
+
+.w-41 {
+  width: 41%; }
+
+.w-44 {
+  width: 44%; }
+
+.w-57 {
+  width: 58%; }
+
+.w-58 {
+  width: 58%; }
+
+.w-74 {
+  width: 74%; }
+
+.w-100 {
+  width: 100%; }
+
+@media (max-width: 768px) {
+  .w-md-10 {
+    width: 10%; }
+  .w-md-13 {
+    width: 13%; }
+  .w-md-18 {
+    width: 18%; }
+  .w-md-21 {
+    width: 21%; }
+  .w-md-47 {
+    width: 47%; }
+  .w-md-60 {
+    width: 60%; }
+  .w-md-79 {
+    width: 79%; }
+  .w-md-100 {
+    width: 100%; } }
+
+@media (max-width: 576px) {
+  .w-sm-32 {
+    width: 32%; }
+  .w-sm-45 {
+    width: 45%; }
+  .w-sm-50 {
+    width: 50%; }
+  .w-sm-75 {
+    width: 75%; }
+  .w-sm-85 {
+    width: 85%; }
+  .w-sm-100 {
+    width: 100%; } }
+
+.h-100 {
+  height: 100%; }
+
+@media (max-width: 576px) {
+  .h-sm-50 {
+    height: 50%; } }
+
+.mx-auto {
+  margin: auto; }
+
+.mb-1 {
+  margin-bottom: 0.5rem; }
+
+.mb-2 {
+  margin-bottom: 1rem; }
+
+.mb-3 {
+  margin-bottom: 1.5rem; }
+
+.mb-4 {
+  margin-bottom: 2rem; }
+
+.mb-5 {
+  margin-bottom: 2.25rem; }
+
+.mb-6 {
+  margin-bottom: 2.5rem; }
+
+.mb-7 {
+  margin-bottom: 3rem; }
+
+.mb-8 {
+  margin-bottom: 3.75rem; }
+
+@media (max-width: 768px) {
+  .mb-md-0 {
+    margin-bottom: 0; }
+  .mb-md-1 {
+    margin-bottom: 0.5rem; }
+  .mb-md-2 {
+    margin-bottom: 1rem; }
+  .mb-md-3 {
+    margin-bottom: 1.5rem; }
+  .mb-md-4 {
+    margin-bottom: 2rem; }
+  .mb-md-6 {
+    margin-bottom: 2.5rem; }
+  .mb-md-8 {
+    margin-bottom: 3.75rem; } }
+
+@media (max-width: 576px) {
+  .mb-sm-0 {
+    margin-bottom: 0; }
+  .mb-sm-1 {
+    margin-bottom: 0.5rem; }
+  .mb-sm-2 {
+    margin-bottom: 1rem; }
+  .mb-sm-3 {
+    margin-bottom: 1.5rem; } }
+
+.me-1 {
+  margin-right: 0.5rem; }
+
+.me-2 {
+  margin-right: 1rem; }
+
+.me-3 {
+  margin-right: 1.5rem; }
+
+.me-4 {
+  margin-right: 2rem; }
+
+.me-6 {
+  margin-right: 2.5rem; }
+
+.me-7 {
+  margin-right: 3rem; }
+
+@media (max-width: 768px) {
+  .me-md-0 {
+    margin-right: 0; }
+  .me-md-1 {
+    margin-right: 0.5rem; }
+  .me-md-3 {
+    margin-right: 1.5rem; }
+  .me-md-4 {
+    margin-right: 2rem; }
+  .me-md-6 {
+    margin-right: 2.5rem; } }
+
+@media (max-width: 576px) {
+  .me-sm-0 {
+    margin-right: 0; }
+  .me-sm-1 {
+    margin-right: 0.5rem; }
+  .me-sm-3 {
+    margin-right: 1.5rem; } }
+
+.ms-4 {
+  margin-left: 2rem; }
+
+@media (max-width: 768px) {
+  .ms-md-0 {
+    margin-left: 0; } }
+
+.pt-1 {
+  padding-top: 0.5rem; }
+
+.pt-2 {
+  padding-top: 1rem; }
+
+.pt-3 {
+  padding-top: 1.5rem; }
+
+.pt-4 {
+  padding-top: 2rem; }
+
+.pt-5 {
+  padding-top: 2.25rem; }
+
+.pt-8 {
+  padding-top: 3.75rem; }
+
+@media (max-width: 768px) {
+  .pt-md-0 {
+    padding-top: 0; }
+  .pt-md-1 {
+    padding-top: 0.5rem; }
+  .pt-md-4 {
+    padding-top: 2rem; }
+  .pt-md-6 {
+    padding-top: 2.5rem; } }
+
+@media (max-width: 576px) {
+  .pt-sm-1 {
+    padding-top: 0.5rem; }
+  .pt-sm-2 {
+    padding-top: 1rem; }
+  .pt-sm-3 {
+    padding-top: 1.5rem; }
+  .pt-sm-4 {
+    padding-top: 2rem; } }
+
+.pb-1 {
+  padding-bottom: 0.5rem; }
+
+.pb-2 {
+  padding-bottom: 1rem; }
+
+.pb-3 {
+  padding-bottom: 1.5rem; }
+
+.pb-4 {
+  padding-bottom: 2rem; }
+
+.pb-6 {
+  padding-bottom: 2.5rem; }
+
+.pb-7 {
+  padding-bottom: 3rem; }
+
+.pb-9 {
+  padding-bottom: 5rem; }
+
+@media (max-width: 768px) {
+  .pb-md-0 {
+    padding-bottom: 0; }
+  .pb-md-2 {
+    padding-bottom: 1rem; }
+  .pb-md-4 {
+    padding-bottom: 2rem; } }
+
+@media (max-width: 576px) {
+  .pb-sm-0 {
+    padding-bottom: 0; }
+  .pb-sm-1 {
+    padding-bottom: 0.5rem; }
+  .pb-sm-3 {
+    padding-bottom: 1.5rem; }
+  .pb-sm-4 {
+    padding-bottom: 2rem; }
+  .pb-sm-6 {
+    padding-bottom: 2.5rem; } }
+
+.ps-2 {
+  padding-left: 1rem; }
+
+.ps-3 {
+  padding-left: 1.5rem; }
+
+@media (max-width: 576px) {
+  .ps-sm-1 {
+    padding-left: 0.5rem; } }
+
+.pe-2 {
+  padding-right: 1rem; }
+
+.pe-3 {
+  padding-right: 1.5rem; }
+
+.bg-primary {
+  background: #AA0601; }
+
+.bg-secondary {
+  background: #650300; }
+
+.bg-pink {
+  background: #FBF2F2; }
+
+.bg-dark {
+  background: #000; }
+
+.text-primary {
+  color: #AA0601; }
+
+.text-secondary {
+  color: #650300; }
+
+.text-white {
+  color: #FFFFFF; }
+
+.text-dark {
+  color: #000000; }
+
+.text-muted {
+  color: #555555; }
+
+@media (max-width: 768px) {
+  .text-md-muted {
+    color: #555555; } }
+
+@media (max-width: 576px) {
+  .text-sm-primary {
+    color: #AA0601; } }
+
+.border-1 {
+  border: 1px solid #00000020; }
+
+@media (max-width: 576px) {
+  .border-sm-1 {
+    border: 1px solid #FFFFFF; } }
+
+.border-bottom-1 {
+  border-bottom: 1px solid #FFFFFF; }
+
+.border-left-8 {
+  border-left: 8px solid #9F1213; }
+
+@media (max-width: 768px) {
+  .border-left-md-4 {
+    border-left: 4px solid #9F1213; } }
+
+.border-gray {
+  border-color: #707070; }
+
+.d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  display: flex; }
+
+@media (max-width: 768px) {
+  .d-md-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+@media (max-width: 768px) {
+  .flex-md-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+@media (max-width: 576px) {
+  .flex-sm-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .flex-sm-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse; } }
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+@media (max-width: 768px) {
+  .flex-md-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+@media (max-width: 576px) {
+  .flex-sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .flex-sm-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }
+
+.justify-content-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.justify-content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media (max-width: 768px) {
+  .justify-content-md-end {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .justify-content-md-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (max-width: 576px) {
+  .justify-content-sm-start {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
+  .justify-content-sm-center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+.align-items-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start; }
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.align-items-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end; }
+
+@media (max-width: 576px) {
+  .align-items-sm-start {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; } }
+
+.d-block {
+  display: block; }
+
+.d-inline {
+  display: inline; }
+
+.d-none {
+  display: none; }
+
+@media (max-width: 768px) {
+  .d-md-none {
+    display: none; }
+  .d-md-block {
+    display: block; }
+  .d-md-inline {
+    display: inline; } }
+
+@media (max-width: 576px) {
+  .d-sm-none {
+    display: none; }
+  .d-sm-inline {
+    display: inline; }
+  .d-sm-block {
+    display: block; } }
+
+.position-relative {
+  position: relative; }
+
+.position-absolute {
+  position: absolute; }
+
+.top-0 {
+  top: 0; }
+
+.right-0 {
+  right: 0; }
+
+.card-title {
+  padding: 12px 24px;
+  border-bottom: 1px solid #00000020; }
+
+.card-img {
+  width: 100%;
+  height: 224px; }
+
+.card-info {
+  padding: 16px 22px 8px 26px; }
+
+@media (max-width: 768px) {
+  .card-title {
+    padding: 8px 24px; }
+  .card-img {
+    width: 100%;
+    height: 164px; } }
+
+@media (max-width: 576px) {
+  .card-title {
+    padding: 8px 24px; } }
+
+.sunglassesProducts-cards {
+  width: calc(100% / 3 - 15px);
+  margin-bottom: 104px; }
+
+@media (max-width: 768px) {
+  .sunglassesProducts-cards {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 72px; } }
+
+@media (max-width: 576px) {
+  .sunglassesProducts-cards {
+    width: 100%;
+    margin-bottom: 32px; } }
+
+.opticalProducts-cards {
+  width: calc(100% / 4 - 15px);
+  margin-bottom: 104px; }
+
+@media (max-width: 768px) {
+  .opticalProducts-cards {
+    width: calc(100% / 2 - 15px);
+    margin-bottom: 72px; } }
+
+@media (max-width: 576px) {
+  .opticalProducts-cards {
+    width: 100%;
+    margin-bottom: 32px; } }
+
+.blog-cards-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.description-cards {
+  width: calc(100% / 4 - 15px); }
+
+@media (max-width: 768px) {
+  .description-cards {
+    width: calc(100% / 2 - 90px); } }
+
+@media (max-width: 576px) {
+  .description-cards {
+    width: calc(100% - 90px); } }
+
+.classic-cards-img {
+  width: calc(100% - 445px); }
+
+@media (max-width: 768px) {
+  .classic-cards-img {
+    width: calc(100% - 300px); } }
+
+@media (max-width: 576px) {
+  .classic-cards-img {
+    width: 100%; } }
+
+.btn-dark {
+  display: block;
+  background: #000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px  0; }
+
+@media (max-width: 768px) {
+  .map {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.45%; } }
+
+.map iframe {
+  width: 635px;
+  height: 422px; }
+  @media (max-width: 768px) {
+    .map iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; } }
+
+.bg-sunglassesCovers-1 {
+  width: 960px;
+  height: 304px;
+  background: url("https://i.imgur.com/XWv7BOq.png") no-repeat center;
+  background-size: cover; }
+
+.bg-sunglassesCovers-2 {
+  width: 960px;
+  height: 304px;
+  background: url("https://i.imgur.com/QJg1pZX.png") no-repeat center;
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  .bg-sunglassesCovers-md-1 {
+    background: url("https://i.imgur.com/JFBWVak.png"); }
+  .bg-sunglassesCovers-md-2 {
+    background: url("https://i.imgur.com/900b5pu.png"); } }
+
+@media (max-width: 576px) {
+  .bg-sunglassesCovers-sm-1 {
+    height: 148px;
+    background: url("https://i.imgur.com/oABnqU3.png"); }
+  .bg-sunglassesCovers-sm-2 {
+    height: 148px;
+    background: url("https://i.imgur.com/VZcieaB.png"); } }
+
+.bg-opticalglassesCovers-1 {
+  width: 960px;
+  height: 304px;
+  background: url("https://i.imgur.com/JiK0HiO.png") no-repeat center;
+  background-size: cover; }
+
+.bg-opticalglassesCovers-2 {
+  width: 960px;
+  height: 304px;
+  background: url("https://i.imgur.com/ylQO9AO.png") no-repeat center;
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  .bg-opticalglassesCovers-md-1 {
+    background: url("https://i.imgur.com/4okbMJg.png"); }
+  .bg-opticalglassesCovers-md-2 {
+    background: url("https://i.imgur.com/uOoAT3I.png"); } }
+
+@media (max-width: 576px) {
+  .bg-opticalglassesCovers-sm-1 {
+    height: 148px;
+    background: url("https://i.imgur.com/EWSdttO.png"); }
+  .bg-opticalglassesCovers-sm-2 {
+    height: 148px;
+    background: url("https://i.imgur.com/qZlylC6.png"); } }
+
+.bg-homePage {
+  height: 840px;
+  background: url("https://i.imgur.com/vLC1AoD.png") no-repeat center center;
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  .bg-homePage {
+    background: url("https://i.imgur.com/arCaEjK.png"); } }
+
+@media (max-width: 576px) {
+  .bg-homePage {
+    height: 394px;
+    background: url("https://i.imgur.com/pVqjAhi.png") no-repeat center center;
+    background-size: cover; } }
+
+.material-icons {
+  font-size: 48px; }
+  .material-icons-outlined {
+    font-size: 44px; }
+
+@media (max-width: 768px) {
+  .material-icons {
+    font-size: 32px; }
+    .material-icons-outlined {
+      font-size: 30px; } }
+
+@media (max-width: 576px) {
+  .material-icons {
+    font-size: 16px; }
+    .material-icons-outlined {
+      font-size: 15px; } }
+
+.nav-link {
+  border-bottom: 8px solid transparent; }
+  .nav-link:hover {
+    border-bottom: 8px solid #AA0601; }
+
+.page-item {
+  border: 1px solid #555555; }
+  .page-item.disabled {
+    background: #F2F2F2; }
+
+.page-link {
+  display: block;
+  color: #555555;
+  padding: 12px 12px; }
+  .page-link:hover {
+    color: #FFFFFF;
+    background: #000000; }
+  .page-link.active {
+    color: #FFFFFF;
+    background: #000000; }
+
+.navbar-container {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 30px 15PX; }
+
+.glasses-logo {
+  width: 80px;
+  height: 48px;
+  background: url(../images/logo-new.png) no-repeat center;
+  background-size: cover;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+@media (max-width: 576px) {
+  .navbar-container {
+    padding: 0; }
+  .glasses-logo {
+    width: 48px;
+    height: 30px;
+    margin: 10px 0;
+    background: url(../images/logo-new1.png);
+    background-size: cover; } }
+
+.faq-content {
+  padding: 96px 0 128px 0; }
+
+.faq-text {
+  margin-left: 96px; }
+
+@media (max-width: 768px) {
+  .faq-content {
+    padding: 60px  0 72px 0; } }
+
+@media (max-width: 576px) {
+  .faq-content {
+    padding: 28px 0 36px 0; }
+  .faq-text {
+    margin-left: 0; } }
+
+.location-content {
+  padding: 96px 0 128px 0; }
+
+@media (max-width: 768px) {
+  .location-content {
+    padding: 60px  0 76px 0; } }
+
+@media (max-width: 576px) {
+  .location-content {
+    padding: 28px  0 40px 0; } }
+
+.products-color-size1 {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #5F3E2D; }
+
+.products-color-size2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: #B75929; }
+
+.sunglassesProducts-content {
+  padding: 80px 0 56px; }
+
+@media (max-width: 768px) {
+  .sunglassesProducts-content {
+    padding: 56px 0 24px; } }
+
+@media (max-width: 576px) {
+  .sunglassesProducts-content {
+    padding: 32px 0 56px; } }
+
+.opticalProducts-content {
+  padding: 80px 0 160px; }
+
+@media (max-width: 768px) {
+  .opticalProducts-content {
+    padding: 56px 0 96px; } }
+
+@media (max-width: 576px) {
+  .opticalProducts-content {
+    padding: 32px 0 56px; } }
+
+.blog-content {
+  padding: 40px 0 160px; }
+
+@media (max-width: 768px) {
+  .blog-content {
+    padding: 32px 0 96px; } }
+
+@media (max-width: 576px) {
+  .blog-content {
+    padding: 28px 0 56px; } }
+
+.blog-specilEvent-content {
+  padding-bottom: 160px; }
+
+@media (max-width: 768px) {
+  .blog-specilEvent-content {
+    padding-bottom: 96px; } }
+
+@media (max-width: 576px) {
+  .blog-specilEvent-content {
+    padding-bottom: 56px; } }
 
 /*# sourceMappingURL=all.css.map */
