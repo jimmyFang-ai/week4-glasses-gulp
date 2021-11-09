@@ -1,0 +1,15 @@
+.location-content {
+    padding: 96px 0 128px 0;
+}
+
+@include pad {
+    .location-content {
+        padding: 60px  0 76px 0;
+    }
+}
+
+@include mobile {
+    .location-content {
+        padding: 28px  0 40px 0;
+    }
+}

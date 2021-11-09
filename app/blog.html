@@ -1,0 +1,135 @@
+---
+title: 部落格分頁
+layout: ./app/layout.ejs
+engine: ejs
+current: blog
+---
+
+<div class="navbar bg-secondary">
+    <div class="container d-flex d-sm-none justify-content-between">
+        <ul class="navbar-nav d-flex">
+            <li class="nav-item me-7">
+                <a class="text-white fs-5 fs-md-6 d-block pt-2 pb-2" href="#">最新消息</a>
+            </li>
+            <li class="nav-item me-7">
+                <a  class="text-white fs-5 fs-md-6  d-block pt-2 pb-2" href="#">特別企劃</a>
+            </li>
+            <li class="nav-item me-7">
+                <a class="text-white fs-5 fs-md-6  d-block pt-2 pb-2"  href="#">新品上市</a>
+            </li>
+            <li class="nav-item">
+                <a  class="text-white  fs-5 fs-md-6 d-block pt-2 pb-2" href="#">鏡框小知識</a>
+            </li>
+        </ul>
+        <form action="#" class="d-flex">
+           <img  src="./assets/images/search_white_36dp.svg" alt="search">
+        </form>
+    </div>
+</div>
+<div class="blog-content">
+    <div class="container">
+        <h2 class="fs-2 fs-sm-3 fw-bold  border-left-8 border-left-md-4 ps-2 mb-8 mb-md-6 mb-sm-3">部落格</h2>
+         <div class="card d-flex flex-wrap justify-content-between mb-8 mb-md-3 mb-sm-3">
+             <div class="w-57 w-md-47 w-sm-100 mb-sm-1">
+                 <img class="blog-cards-img" src="./assets/images/blog-1.png" alt="blog">
+             </div>
+             <div class="card-body w-40 w-md-47 w-sm-100">
+                 <h3 class="fs-3 fs-md-5 fs-sm-6 text-secondary">情人特別企劃</h3>
+                 <p class="card-text d-flex justify-content-between mb-3 mb-md-4 mb-sm-0">
+                     <span class="fs-5 fs-md-6 fs-sm-sm">2020 Valentine’s Special</span>
+                     <span class="text-muted fs-md-sm">2020/02/14</span>
+                 </p>
+                 
+                 <p class="card-text  d-sm-none fs-5 fs-md-sm text-muted mb-2 mb-md-0">
+                    一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br> 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                    <a href="blog-specialEvent.html" class="d-none d-md-inline   fs-md-sm  text-md-muted  fw-bold">MORE</a>
+                 </p>
+                 <a href="blog-specialEvent.html" class="d-block d-md-none  fs-3  text-secondary  text-end fw-bold">MORE</a>
+             </div>
+         </div>
+         <div class="card d-flex flex-wrap justify-content-between mb-8  mb-md-3 mb-sm-3">
+            <div class="w-57 w-md-47 w-sm-100 mb-sm-1">
+                <img class="blog-cards-img" src="./assets/images/blog-2.png" alt="blog">
+            </div>
+            <div class="card-body w-40 w-md-47 w-sm-100">
+                <h3 class="fs-3 fs-md-5 fs-sm-6 text-secondary">街頭潮人訪問</h3>
+                <p class="card-text d-flex justify-content-between mb-3 mb-md-4 mb-sm-0">
+                    <span class="fs-5 fs-md-6 fs-sm-sm">Street Interview</span>
+                    <span  class="text-muted fs-md-sm">2020/02/02</span>
+                </p>
+                
+                <p class="card-text d-sm-none  fs-5 fs-md-sm text-muted mb-8 mb-md-0">
+                    炎熱的夏季裡，衣著選擇經常希望以簡潔的風格為 主，但有時單純只穿搭 T 恤或短袖開襟襯衫，又覺得整體造型度有點不足嗎？那麼不妨可以透過「配 件」，為穿搭點綴出與眾不同的視覺層次，而本季有 哪些必備的配件系列呢？一起從以下推薦的 3 款單品，讓你瞬間帥氣爆棚散發型男品味⋯⋯
+                    <a href="#" class="d-none d-md-inline   fs-md-sm  text-md-muted  fw-bold">MORE</a>
+                 </p>
+                 <a href="#" class="d-block d-md-none  fs-3  text-secondary  text-end fw-bold">MORE</a>
+            </div>
+        </div>
+        <div class="card d-flex flex-wrap justify-content-between mb-8  mb-md-3 mb-sm-3">
+            <div class="w-57 w-md-47 w-sm-100 mb-sm-1">
+                <img class="blog-cards-img" src="./assets/images/blog-3.png" alt="blog">
+            </div>
+            <div class="card-body w-40 w-md-47 w-sm-100">
+                <h3 class="fs-3 fs-md-5 text-secondary">春季新品上市</h3>
+                <p class="card-text d-flex justify-content-between mb-3 mb-md-4 mb-sm-0">
+                    <span class="fs-5 fs-md-6 fs-sm-sm">Street Interview</span>
+                    <span class="text-muted fs-md-sm">2020/02/02</span>
+                </p>
+               
+                <p class="card-text  d-sm-none fs-5 fs-md-sm text-muted mb-2 mb-md-0">
+                    2020 年春季的光學眼鏡跳脫前幾季流行的復古框 型，比起圓框與小方框等文青風格，偏向個性款式的 眉框眼鏡成為這一季的耀眼之星。除了經典款式如 黑色眉框落在長方形鏡面上，眉宇之間露出專業莊重 的特殊氣質，包覆在圓形鏡框上的貓眼型眉框則是強 調出特殊設計感，俐落時髦的造型搭配⋯⋯
+                    <a href="#" class="d-none d-md-inline   fs-md-sm  text-md-muted  fw-bold">MORE</a>
+                 </p>
+                 <a href="#" class="d-block d-md-none  fs-3  text-secondary  text-end fw-bold">MORE</a>
+            </div>
+        </div>
+        <div class="card d-flex  flex-wrap justify-content-between mb-8  mb-md-3 mb-sm-3">
+            <div class="w-57 w-md-47 w-sm-100 mb-sm-1">
+                <img class="blog-cards-img" src="./assets/images/blog-4.png" alt="blog">
+            </div>
+            <div class="card-body w-40 w-md-47 w-sm-100">
+                <h3 class="fs-3 fs-md-5 text-secondary">設計師獨享鏡框優惠</h3>
+                <p class="card-text d-flex justify-content-between mb-3 mb-md-4 mb-sm-0">
+                    <span class="fs-5 fs-md-6 fs-sm-sm">Sales for Designer</span>
+                    <span class="text-muted fs-md-sm">2020/01/18</span>
+                </p>
+                
+                <p class="card-text  d-sm-none fs-5 fs-md-sm text-muted mb-2 mb-md-0">
+                    一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br> 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                    <a href="#" class="d-none d-md-inline   fs-md-sm  text-md-muted  fw-bold">MORE</a>
+                 </p>
+                 <a href="#" class="d-block d-md-none  fs-3  text-secondary  text-end fw-bold">MORE</a>
+            </div>
+        </div>
+        <div class="card d-flex  flex-wrap justify-content-between mb-8  mb-md-3 mb-sm-3">
+            <div class="w-57 w-md-47 w-sm-100 mb-sm-1">
+                <img class="blog-cards-img" src="./assets/images/blog-5.png" alt="blog">
+            </div>
+            <div class="card-body w-40 w-md-47 w-sm-100">
+                <h3 class="fs-3 fs-md-5 text-secondary">抵抗夏日大作戰</h3>
+                <p class="card-text d-flex justify-content-between mb-3 mb-md-4 mb-sm-0">
+                    <span class="fs-5 fs-md-6 fs-sm-sm">Summer Special</span>
+                    <span class="text-muted fs-md-sm">2019/08/07</span>
+                </p>
+                
+                <p class="card-text d-sm-none  fs-5 fs-md-sm text-muted mb-2 mb-md-0">
+                    一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！<br> 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯
+                    <a href="#" class="d-none d-md-inline   fs-md-sm  text-md-muted  fw-bold">MORE</a>
+                 </p>
+                 <a href="#" class="d-block d-md-none  fs-3  text-secondary  text-end fw-bold">MORE</a>
+            </div>
+        </div>
+
+        <nav class="pt-5 pt-md-4 pt-sm-2">
+            <ul class="pagination d-flex justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item "><a class="page-link active" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">下一頁</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

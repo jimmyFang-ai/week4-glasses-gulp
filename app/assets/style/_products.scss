@@ -1,0 +1,53 @@
+.products-color {
+    &-size1 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background:  #5F3E2D;
+    }
+
+    &-size2 {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        background: #B75929;
+    }
+}
+
+
+// sunglassesProducts
+.sunglassesProducts-content {
+    padding: 80px 0 56px;
+}
+
+
+@include pad {
+    .sunglassesProducts-content {
+        padding: 56px 0 24px;
+    }
+}
+
+@include mobile {
+    .sunglassesProducts-content {
+        padding: 32px 0 56px;
+    }
+}
+
+
+// opticalProducts
+.opticalProducts-content {
+    padding: 80px 0 160px;
+}
+
+
+@include pad {
+    .opticalProducts-content {
+        padding: 56px 0 96px;
+    }
+}
+
+@include mobile {
+    .opticalProducts-content {
+        padding: 32px 0 56px;
+    }
+}

@@ -1,0 +1,23 @@
+.page {
+    &-item {
+        border: 1px solid $muted;
+        &.disabled {
+            background: $pagination-disabled-bg;
+        }
+    }
+
+    &-link {
+        display: block;
+        color: $muted;
+        padding: 12px 12px;
+        &:hover {
+            color: $white;
+            background: $dark;
+        }
+
+        &.active {
+            color: $white;
+            background: $pagination-active-bg;
+        }
+    }
+}

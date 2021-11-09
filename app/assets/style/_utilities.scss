@@ -1,0 +1,898 @@
+
+// 文字大小
+.fs { 
+    &-1 {
+        font-size: $h1-font-size; //64px
+    }
+    &-2 {
+        font-size: $h2-font-size; //48px subtitle
+     }
+    &-3 {
+        font-size: $h3-font-size; //32px
+     }
+    &-4 {
+        font-size: $h4-font-size; // 24px
+     }
+    &-5 {
+        font-size: $h5-font-size; //20px
+     }
+    &-6{
+        font-size: $h6-font-size; //16px
+     }
+
+    &-sm {
+        font-size: 14px;
+    }
+
+    &-m {
+        font-size: 28px;
+    }
+
+    @include pad {
+  
+        &-md-2 {
+            font-size: $h2-font-size; //32px
+        }
+
+
+        &-md-3 {
+            font-size: $h3-font-size; //32px
+        }
+
+        &-md-4 {
+            font-size: $h4-font-size; //24px
+        }
+
+
+        &-md-5 {
+            font-size: $h5-font-size; //20px
+        }
+
+        &-md-6 {
+            font-size: $h6-font-size; //16px
+        }
+
+        &-md-sm {
+                font-size: 14px;
+        }
+    }
+
+    @include mobile {
+        &-sm-3 {
+            font-size: $h3-font-size; 
+        }
+
+        &-sm-4 {
+            font-size: $h4-font-size; 
+        }
+
+        &-sm-5 {
+            font-size: $h5-font-size; 
+        }
+
+        &-sm-6 {
+            font-size: $h6-font-size; 
+        }
+
+        
+        &-sm-sm {
+            font-size: 14px;
+        }
+
+    }
+
+}
+
+// 行高
+.lh {
+    &-base {
+        line-height: 1.5;
+    }
+    &-sm {
+        line-height: 1.25;
+    }
+}
+
+
+// 文字 對齊 
+.text {
+    &-start {
+      text-align: left;
+    }
+
+    &-center {
+        text-align: center;
+    }
+
+    &-end {
+        text-align: right;
+    }
+}
+
+// 文字粗體 及斜體
+.fw {
+    &-bold {
+        font-weight: bold; //粗體
+    }
+}
+
+.fst {
+    &-italic {
+        font-style: italic;
+    }
+}
+
+
+
+// 寬度 width 
+.w { 
+    &-24 {
+        width: 24%;
+    }
+
+   &-30 {
+       width: 30%;
+   }
+
+   &-31 {
+    width: 31%;
+   }
+
+   &-33 {
+    width: 33%;
+   }
+
+   &-40 {
+    width: 40%;
+   }
+
+
+   &-41 {
+    width: 41%;
+   }
+
+
+    &-44 {
+        width: 44%;
+    }
+
+    &-57 {
+        width:58%;
+    }
+
+    &-58 {
+        width:58%;
+    }
+
+    &-74 {
+        width: 74%;
+    }
+   
+    &-100 {
+        width: 100%;
+    }
+
+    @include pad {
+     &-md-10 {
+         width: 10%;
+     }
+
+     &-md-13 {
+         width: 13%;
+     }
+
+     &-md-18 {
+         width: 18%;
+     }
+
+     &-md-21 {
+        width: 21%;
+    }
+
+
+     &-md-47 {
+        width: 47%;
+    }
+
+      &-md-60 {
+          width: 60%;
+      }
+
+      &-md-79 {
+        width: 79%;
+    }
+
+
+      &-md-100 {
+        width: 100%;
+    }
+
+
+    }
+
+
+    @include mobile {
+        &-sm-32 {
+            width: 32%;
+        }
+
+        &-sm-45 {
+            width: 45%;
+        }
+
+        &-sm-50 {
+            width: 50%;
+        }
+
+        &-sm-75{
+            width: 75%;
+        }
+
+        &-sm-85{
+            width:85%;
+        }
+
+        &-sm-100 {
+            width: 100%;
+        }
+    }
+
+}
+
+
+// 高度
+.h {
+    &-100 {
+        height: 100%;
+    }
+
+    @include mobile {
+         &-sm-50 {
+             height: 50%;
+         }
+    }
+}
+
+// 間距 spacer
+  // margin 
+.mx-auto {
+    margin: auto;
+}
+
+
+
+.mb {
+    &-1 {
+        margin-bottom: $spacer-1; //8
+    }
+    
+    &-2 {
+        margin-bottom: $spacer-2; //16
+    }
+    &-3 {
+        margin-bottom: $spacer-3; //24
+    }
+
+    &-4 {
+        margin-bottom: $spacer-4; //32
+    }
+
+    &-5 {
+        margin-bottom: $spacer-5; //36
+    }
+
+    &-6 {
+        margin-bottom: $spacer-6; //40
+    }
+
+    &-7 {
+        margin-bottom: $spacer-7; //48
+    }
+
+    &-8 {
+        margin-bottom: $spacer-8; //64
+    }
+
+
+    @include pad {
+        &-md-0 {
+            margin-bottom: 0;
+        }
+
+
+       &-md-1 {
+           margin-bottom: $spacer-1;
+       }
+
+       
+       &-md-2 {
+        margin-bottom: $spacer-2;
+    }
+
+        &-md-3 {
+            margin-bottom: $spacer-3;
+        }
+
+
+        &-md-4 {
+            margin-bottom: $spacer-4;
+        }
+
+        &-md-6 {
+            margin-bottom: $spacer-6;
+        }
+
+        &-md-8 {
+            margin-bottom: $spacer-8;
+        }
+      }
+
+    @include mobile {
+        &-sm-0{
+            margin-bottom: 0;
+        }
+
+        &-sm-1 {
+            margin-bottom: $spacer-1;
+        }
+
+        &-sm-2 {
+            margin-bottom: $spacer-2;
+        }
+
+        &-sm-3 {
+            margin-bottom: $spacer-3;
+        }
+    }
+
+}
+
+
+// me 
+.me {
+    &-1 {
+        margin-right: $spacer-1;
+    }
+
+    &-2 {
+        margin-right: $spacer-2;
+    }
+
+    &-3 {
+        margin-right: $spacer-3;
+    }
+
+    &-4 {
+        margin-right: $spacer-4;
+    }
+    
+    &-6 {
+        margin-right: $spacer-6;
+    }
+
+    &-7 {
+        margin-right:  $spacer-7;
+    }
+
+    @include pad {
+       &-md-0 {
+           margin-right: 0;
+       }
+
+       &-md-1 {
+        margin-right: $spacer-1;
+       }
+
+        &-md-3 {
+            margin-right: $spacer-3;
+        }
+
+        &-md-4 {
+            margin-right:  $spacer-4;
+        }
+
+        &-md-6 {
+            margin-right: $spacer-6; //40
+        }
+    }
+
+    @include mobile {
+        &-sm-0 {
+            margin-right: 0;
+        }
+
+        &-sm-1 {
+            margin-right: $spacer-1;
+        }
+
+        &-sm-3 {
+            margin-right: $spacer-3;
+        }
+    }
+} 
+
+// ms {
+.ms {
+    &-4 {
+        margin-left: $spacer-4;
+    }
+
+    @include pad {
+     &-md-0 {
+         margin-left: 0;
+      }
+    }
+}
+
+
+//padding
+
+.pt {
+    &-1 {
+        padding-top: $spacer-1;
+    }
+
+    &-2 {
+        padding-top: $spacer-2;
+    }
+
+
+    &-3 {
+        padding-top: $spacer-3;
+    }
+
+    &-4 {
+        padding-top: $spacer-4; //32
+    }
+
+    &-5 {
+        padding-top: $spacer-5; //36
+    }
+
+    &-8 {
+        padding-top: $spacer-8; //60
+    }
+
+   
+
+   @include pad {
+    &-md-0 {
+        padding-top: 0;
+       }
+
+       &-md-1 {
+        padding-top: $spacer-1;
+       }
+
+       &-md-4 {
+        padding-top: $spacer-4;
+       }
+
+       &-md-6 {
+        padding-top: $spacer-6;
+       }
+   }
+
+
+
+    @include mobile {
+        &-sm-1 {
+            padding-top: $spacer-1;
+        }
+
+
+        &-sm-2{
+            padding-top: $spacer-2;
+        }
+
+        &-sm-3 {
+            padding-top: $spacer-3;
+        }
+
+        &-sm-4 {
+            padding-top: $spacer-4;
+        }
+    }
+}
+
+.pb {
+    &-1 {
+        padding-bottom: $spacer-1;
+    }
+    
+    &-2 {
+        padding-bottom: $spacer-2;
+    }
+    
+    &-3 {
+        padding-bottom: $spacer-3;
+    }
+    
+
+    &-4 {
+        padding-bottom: $spacer-4;
+    }
+
+    &-6 {
+       padding-bottom: $spacer-6;
+    }
+
+    &-7 {
+        padding-bottom: $spacer-7;
+     }
+
+    &-9 {
+        padding-bottom: $spacer-9;
+     }
+    @include pad {
+        &-md-0 {
+            padding-bottom:  0; 
+          }
+
+        &-md-2 {
+            padding-bottom:  $spacer-2; //16
+          }
+
+
+        &-md-4 {
+          padding-bottom:  $spacer-4; //32
+        }
+    }
+
+    @include mobile {
+        &-sm-0 {
+            padding-bottom: 0;
+        }
+
+
+        &-sm-1 {
+            padding-bottom: $spacer-1;
+        }
+
+        &-sm-3 {
+            padding-bottom: $spacer-3;
+        }
+
+        &-sm-4 {
+            padding-bottom: $spacer-4;
+        }
+
+        &-sm-6 {
+            padding-bottom: $spacer-6;
+        }
+    }
+}
+
+//ps 
+.ps {
+    &-2 {
+        padding-left: $spacer-2;
+    }
+
+    &-3 {
+        padding-left: $spacer-3;
+    }
+
+    @include mobile {
+        &-sm-1 {
+            padding-left: $spacer-1;
+        }
+    }
+}
+
+// pe 
+.pe {
+    &-2 {
+        padding-right: $spacer-2;
+    }
+
+    &-3 {
+        padding-right: $spacer-3;
+    }
+}
+
+// 顏色
+ //背景色
+ .bg {
+     &-primary{
+        background: $primary; //背景紅色
+     }
+     
+     &-secondary{
+        background: $secondary; //背景深紅色
+     }
+     
+
+     &-pink {
+        background: $pink;
+    }
+
+    &-dark {
+        background: #000;
+    }
+ }
+
+
+//  文字顏色 
+.text {
+    &-primary {
+      color: $primary;
+    }
+
+    &-secondary  {
+        color: $secondary;
+    }
+
+    &-white {
+        color: $white;
+    }
+
+    &-dark {
+        color: $dark;
+    }
+
+    &-muted {
+        color: $muted;
+    }
+
+    @include pad {
+        &-md-muted {
+            color: $muted;
+        }
+    }
+
+    @include mobile {
+        &-sm-primary {
+            color: $primary;
+        }
+    }
+}
+
+
+// 線條 border 
+.border {
+   &-1 {
+    border: 1px solid #00000020;
+   }
+
+    @include mobile {
+        &-sm-1 {
+            border: 1px solid $white;
+        }
+    }
+}
+
+// border-bottom
+.border-bottom {
+    &-1 {
+        border-bottom: 1px solid $white;
+    }
+}
+
+// border-left 
+.border-left {
+    &-8 {
+        border-left: 8px solid #9F1213;
+    }
+
+    @include pad {
+        &-md-4{
+            border-left: 4px solid #9F1213;
+        }
+    }
+}
+
+
+// 線條顏色
+.border {
+    &-gray {
+        border-color: #707070;
+    }
+}
+
+
+// flex 
+.d {
+   &-flex {
+       display: flex;
+   }
+
+    @include pad {
+        &-md-flex {
+            display: flex;
+        }
+    }
+}
+
+.flex {
+    &-wrap {
+        flex-wrap: wrap;
+    }
+
+    @include pad {
+        &-md-wrap {
+            flex-wrap: wrap;
+        }
+    }
+
+    @include mobile {
+        &-sm-wrap {
+            flex-wrap: wrap;
+        }
+
+        &-sm-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        } 
+    }
+}
+
+
+// 方向
+.flex{
+    &-row {
+        flex-direction: row;
+    }
+    
+    &-row-reverse  {
+        flex-direction: row-reverse;
+    }
+
+    &-column {
+        flex-direction: column;
+    }
+
+ 
+    @include pad {
+        &-md-row{
+            flex-direction: row;
+        }
+    }
+
+
+    @include mobile {
+        &-sm-column {
+            flex-direction: column;
+        }
+
+        &-sm-row-reverse{
+            flex-direction: row-reverse;
+        }
+    }
+
+}
+
+
+
+// 調整內容 對齊主軸 預設為row 橫軸 (X軸)開始
+.justify-content {
+    &-start {
+        justify-content: flex-start;
+    }
+   
+    &-center {
+        justify-content: center;
+    }
+
+    &-end {
+        justify-content: flex-end;
+    }
+
+    &-between {
+        justify-content: space-between;
+    }
+
+    @include pad {
+        &-md-end {
+            justify-content: flex-end;
+        }
+
+        &-md-around {
+            justify-content: space-around;
+        }
+    }
+
+    @include mobile {
+        &-sm-start {
+            justify-content: start;
+        }
+
+
+        &-sm-center {
+            justify-content: center;
+        }
+    }
+}
+
+
+// 對齊物件  預設縱軸(y軸)開始  
+.align-items {
+   &-start {
+       align-items: start;
+   }
+
+   &-center {
+       align-items: center;
+   }
+
+   &-end {
+       align-items: end;
+   }
+
+   @include mobile {
+       &-sm-start {
+        align-items: start;
+    }
+   }
+}
+
+
+
+// display
+ //d-block
+.d {
+  &-block {
+      display: block;
+  }
+
+  &-inline {
+      display:inline;
+  }
+
+  &-none {
+      display: none;
+  }
+
+ @include pad {
+    &-md-none {
+        display: none;
+    }
+
+    &-md-block {
+        display: block;
+    }
+
+     &-md-inline{
+         display: inline;
+     }
+ }
+
+ @include mobile {
+   &-sm-none {
+       display: none;
+   }
+
+   &-sm-inline {
+    display: inline;
+   }
+
+   &-sm-block {
+    display: block;
+ }
+ }
+}
+
+// position 位置
+
+.position {
+    &-relative {
+        position: relative;
+    }
+
+    &-absolute {
+        position: absolute;
+    }
+
+}
+
+.top {
+    &-0 {
+        top: 0;
+    }
+}
+
+.right {
+    &-0 {
+        right: 0;
+    }
+}
+

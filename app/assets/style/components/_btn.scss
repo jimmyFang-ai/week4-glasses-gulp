@@ -1,0 +1,9 @@
+.btn {
+    &-dark {
+        display: block;
+        background: #000;
+        color: $white;
+        text-align: center;
+        padding: 20px  0;
+    }
+}

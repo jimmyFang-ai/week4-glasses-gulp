@@ -1,0 +1,50 @@
+
+// 字體大小 
+$font-size-base: 1rem; //16px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 2; //32px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base ;// 16px
+
+
+// 行高
+$line-height-base:  1.5;
+$line-height-sm:    1.25; 
+
+// 間距 spacer
+$spacer: 1rem;
+
+$spacer-1: $spacer * 0.5; //8
+$spacer-2: $spacer; //16
+$spacer-3: $spacer * 1.5; //24
+$spacer-4: $spacer * 2; //32
+$spacer-5: $spacer * 2.25; //36
+$spacer-6: $spacer * 2.5; //40
+$spacer-7: $spacer * 3; //48
+$spacer-8: $spacer * 3.75; //60
+$spacer-9: $spacer * 5; //80
+
+
+// 顏色 
+$primary: #AA0601;
+$secondary: #650300;
+$pink: #FBF2F2;
+$dark: #000000;
+$white: #FFFFFF;
+$muted: #555555;
+
+// 分頁 pagination
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               $dark;
+$pagination-hover-border-color:     $white;
+
+$pagination-active-color:           $pagination-hover-color;
+$pagination-active-bg:              $pagination-hover-bg;
+$pagination-active-border-color:    $pagination-hover-border-color;
+
+$pagination-disabled-color:        #F2F2F2;
+$pagination-disabled-bg:           #F2F2F2;
+$pagination-disabled-border-color:  $muted;

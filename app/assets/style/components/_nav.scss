@@ -1,0 +1,8 @@
+//  系列鏡框 分類
+.nav-link {
+    // 解決選單hover加底線效果，背景跳動問題
+    border-bottom: 8px solid transparent;
+    &:hover {
+        border-bottom: 8px solid $primary;
+    }
+}

@@ -1,0 +1,23 @@
+.faq-content {
+    padding: 96px 0 128px 0;
+}
+
+.faq-text {
+    margin-left: 96px;
+}
+
+@include pad {
+    .faq-content {
+        padding: 60px  0 72px 0;
+    }
+}
+
+@include mobile {
+    .faq-content {
+        padding: 28px 0 36px 0;
+    }
+
+    .faq-text {
+        margin-left: 0;
+    }
+}

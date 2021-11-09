@@ -1,0 +1,25 @@
+.material-icons {
+     font-size: 48px;
+     &-outlined {
+         font-size: 44px;
+     }
+}
+
+@include pad {
+    .material-icons {
+        font-size: 32px;
+        &-outlined {
+            font-size: 30px;
+        }
+   }
+}
+
+@include mobile {
+    .material-icons {
+        font-size: 16px;
+        &-outlined {
+            font-size: 15px;
+        }
+   }
+}
+

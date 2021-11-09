@@ -1,0 +1,50 @@
+---
+title: 門市據點資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: locationInfo
+---
+
+<div class="location-content">
+    <div class="container">
+        <h2 class="fs-2 fs-sm-3 border-left-8  border-left-md-4 ps-2 ps-sm-1 mb-8 mb-md-6 mb-sm-3">門市據點</h2>
+        <div class="mb-4 mb-md-3">
+            <label  class="fs-4 fs-md-6 pe-2" for="location">選擇地區</label>
+            <select class="w-30 w-sm-75 pt-1 pb-1 ps-2 pe-2" name="location" id="location">
+                <option value="台北市">台北市</option>
+            </select>
+        </div>
+        <div class="d-flex flex-md-wrap">
+            <div class="card w-41  w-md-100  d-md-flex d-sm-block  me-4 me-md-0 mb-md-4 mb-sm-2">
+                <div class="w-md-47 w-sm-100 me-md-4">
+                    <img  class="card-img" src="./assets/images/locate1.jpeg" alt="台北中山旗艦店">
+                </div>
+                <div class="card-body w-md-47 w-sm-100 border-1">
+                    <h4 class="card-title fs-4 fs-md-6">台北中山旗艦店</h4>
+                    <ul class="card-info">
+                        <li class="d-flex mb-1">
+                          <img class="me-1" src="./assets/images/local_phone_black_18dp.svg" alt="phone">
+                          <a class="fs-5 fs-md-sm text-dark" href="tel:02-000-1234">電話：(02)000-1234</a>
+                        </li>
+                        <li class="d-flex mb-1">
+                           <img class="me-1" src="./assets/images/query_builder_black_18dp.svg" alt="clock">
+                           <a class="fs-5  fs-md-sm text-dark" href="#">營業時間：10:00-21:00</a>
+                        </li>
+                        <li class=" mb-1">
+                           <a class="fs-5 fs-md-sm text-dark" href="#">
+                           <img  src="./assets/images/location_on_black_18dp.svg" alt="location">
+                           地址：台北市中山區南京東路<span class="d-none d-md-inline">25巷2-1號<span>
+                           </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <div class="map">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637552808667!2d121.5356814149795!3d25.052266183963713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1634660631086!5m2!1szh-TW!2stw"  style="border:0;" allowFullScreen="true" loading="lazy"></iframe>
+                <!-- 嵌入 Google map -->
+             </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,111 @@
+
+// sunglasses
+.bg-sunglassesCovers {
+    &-1 {
+        width: 960px;
+        height: 304px;
+        background: url('https://i.imgur.com/XWv7BOq.png') no-repeat center ;
+        background-size: cover;
+    }
+
+    &-2 {
+        width: 960px;
+        height: 304px;
+        background: url('https://i.imgur.com/QJg1pZX.png') no-repeat center;
+        background-size: cover;
+    }
+}
+
+@include pad {
+    .bg-sunglassesCovers {
+        &-md-1 {
+            background: url('https://i.imgur.com/JFBWVak.png');
+        }
+
+        &-md-2 {
+            background: url('https://i.imgur.com/900b5pu.png');
+        }
+    }
+}
+
+
+@include mobile {
+    .bg-sunglassesCovers {
+       &-sm-1 {
+          height: 148px;
+          background: url('https://i.imgur.com/oABnqU3.png');
+       }
+
+        &-sm-2 {
+            height: 148px;
+            background: url('https://i.imgur.com/VZcieaB.png');
+        }
+    }
+}
+
+
+// opticalglasses
+.bg-opticalglassesCovers {
+    &-1 {
+        width: 960px;
+        height: 304px;
+        background: url('https://i.imgur.com/JiK0HiO.png') no-repeat center ;
+        background-size: cover;
+    }
+
+    &-2 {
+        width: 960px;
+        height: 304px;
+        background: url('https://i.imgur.com/ylQO9AO.png') no-repeat center;
+        background-size: cover;
+    }
+}
+
+@include pad {
+    .bg-opticalglassesCovers {
+        &-md-1 {
+            background: url('https://i.imgur.com/4okbMJg.png');
+        }
+
+        &-md-2 {
+            background: url('https://i.imgur.com/uOoAT3I.png');
+        }
+    }
+}
+
+
+@include mobile {
+    .bg-opticalglassesCovers {
+        &-sm-1 {
+            height: 148px;
+            background: url('https://i.imgur.com/EWSdttO.png');
+        }
+
+        &-sm-2 {
+            height: 148px;
+            background: url('https://i.imgur.com/qZlylC6.png');
+        }
+    }
+}
+
+
+// homePage
+.bg-homePage {
+    height: 840px;
+    background: url('https://i.imgur.com/vLC1AoD.png') no-repeat center center;
+    background-size: cover;
+}
+
+@include pad {
+    .bg-homePage {
+        background: url('https://i.imgur.com/arCaEjK.png') ;
+    }
+}
+
+@include mobile {
+  .bg-homePage {
+    height: 394px;
+    background: url('https://i.imgur.com/pVqjAhi.png') no-repeat center center;
+    background-size: cover;
+  }
+}
