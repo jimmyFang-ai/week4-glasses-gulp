@@ -620,11 +620,25 @@ body {
 .position-absolute {
   position: absolute; }
 
+@media (max-width: 576px) {
+  .position-sm-absolute {
+    position: absolute; }
+  .position-sm-relative {
+    position: relative; } }
+
 .top-0 {
   top: 0; }
 
+@media (max-width: 576px) {
+  .top-sm-40 {
+    top: 40%; } }
+
 .right-0 {
   right: 0; }
+
+@media (max-width: 576px) {
+  .right-sm-25 {
+    right: 25%; } }
 
 .card-title {
   padding: 12px 24px;
