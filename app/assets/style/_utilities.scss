@@ -28,6 +28,10 @@
         font-size: 28px;
     }
 
+    &-lg {
+        font-size: 72px;
+    }
+
     @include pad {
   
         &-md-2 {
@@ -155,6 +159,8 @@
     &-44 {
         width: 44%;
     }
+
+
 
     &-57 {
         width:58%;
@@ -533,10 +539,18 @@
             padding-bottom:  $spacer-2; //16
           }
 
+        &-md-3 {
+            padding-bottom:  $spacer-3; 
+          }
+
 
         &-md-4 {
           padding-bottom:  $spacer-4; //32
         }
+
+        &-md-8 {
+            padding-bottom:  $spacer-8; 
+          }
     }
 
     @include mobile {
@@ -900,6 +914,10 @@
         top: 0;
     }
 
+    &-40 {
+        top: 40%;
+    }
+
     @include mobile {
         &-sm-40 {
             top: 40%;
@@ -911,6 +929,8 @@
     &-0 {
         right: 0;
     }
+
+    
 
     @include mobile {
         &-sm-25 {

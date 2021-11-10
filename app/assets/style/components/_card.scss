@@ -126,3 +126,18 @@
     
 }
 
+// co-branded-cards 聯名設計
+.co-branded-cards {
+    width: calc(100% / 2 - 30px);
+    &::before {  //在圖片使用偽元素做白色遮色片效果
+        content: '';
+        position: absolute;
+        top:0; right:0; bottom:0; left:0;
+        background: $white;
+    }
+    &-img {
+        width: 100%;
+        opacity: 0.5;
+    }
+}
+
