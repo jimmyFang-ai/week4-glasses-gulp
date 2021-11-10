@@ -741,6 +741,12 @@ body {
     width: 100%;
     opacity: 0.5; }
 
+@media (max-width: 576px) {
+  .co-branded-cards {
+    width: 100%; }
+    .co-branded-cards-img {
+      max-height: 291px; } }
+
 .btn-dark {
   display: block;
   background: #000;
@@ -837,6 +843,14 @@ body {
   height: 705px;
   background: url("https://i.imgur.com/q5iw0kb.png") no-repeat center center;
   background-size: cover; }
+
+@media (max-width: 768px) {
+  .bg-co-branded {
+    height: 452px; } }
+
+@media (max-width: 576px) {
+  .bg-co-branded {
+    height: 779px; } }
 
 .material-icons {
   font-size: 48px; }
