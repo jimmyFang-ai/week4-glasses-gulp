@@ -116,3 +116,15 @@
     background: url('https://i.imgur.com/q5iw0kb.png') no-repeat center center;
     background-size: cover;
 }
+
+@include pad {
+    .bg-co-branded  {
+        height: 452px;
+    }
+}
+
+@include mobile {
+    .bg-co-branded  {
+        height: 779px;
+    }
+}

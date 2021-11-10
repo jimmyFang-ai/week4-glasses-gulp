@@ -141,3 +141,11 @@
     }
 }
 
+@include mobile {
+    .co-branded-cards {
+        width: 100%;
+    &-img {
+           max-height: 291px;
+        }
+    }
+}
