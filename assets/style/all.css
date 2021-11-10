@@ -54,7 +54,6 @@ a {
 
 img {
   max-width: 100%;
-  height: 0 auto;
   vertical-align: middle; }
 
 body {
@@ -96,6 +95,9 @@ body {
 
 .fs-m {
   font-size: 28px; }
+
+.fs-lg {
+  font-size: 72px; }
 
 @media (max-width: 768px) {
   .fs-md-2 {
@@ -378,8 +380,12 @@ body {
     padding-bottom: 0; }
   .pb-md-2 {
     padding-bottom: 1rem; }
+  .pb-md-3 {
+    padding-bottom: 1.5rem; }
   .pb-md-4 {
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .pb-md-8 {
+    padding-bottom: 3.75rem; } }
 
 @media (max-width: 576px) {
   .pb-sm-0 {
@@ -629,6 +635,9 @@ body {
 .top-0 {
   top: 0; }
 
+.top-40 {
+  top: 40%; }
+
 @media (max-width: 576px) {
   .top-sm-40 {
     top: 40%; } }
@@ -717,6 +726,20 @@ body {
 @media (max-width: 576px) {
   .classic-cards-img {
     width: 100%; } }
+
+.co-branded-cards {
+  width: calc(100% / 2 - 30px); }
+  .co-branded-cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF; }
+  .co-branded-cards-img {
+    width: 100%;
+    opacity: 0.5; }
 
 .btn-dark {
   display: block;
@@ -809,6 +832,11 @@ body {
     height: 394px;
     background: url("https://i.imgur.com/pVqjAhi.png") no-repeat center center;
     background-size: cover; } }
+
+.bg-co-branded {
+  height: 705px;
+  background: url("https://i.imgur.com/q5iw0kb.png") no-repeat center center;
+  background-size: cover; }
 
 .material-icons {
   font-size: 48px; }
