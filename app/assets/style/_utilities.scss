@@ -882,17 +882,40 @@
         position: absolute;
     }
 
+    @include mobile {
+        &-sm-absolute  {
+            position: absolute;
+        }
+
+        &-sm-relative {
+            position: relative;
+        }    
+    }
+
+
 }
 
 .top {
     &-0 {
         top: 0;
     }
+
+    @include mobile {
+        &-sm-40 {
+            top: 40%;
+        }
+    }
 }
 
 .right {
     &-0 {
         right: 0;
+    }
+
+    @include mobile {
+        &-sm-25 {
+            right: 25%;
+        }
     }
 }
 
