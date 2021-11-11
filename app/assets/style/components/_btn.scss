@@ -6,4 +6,23 @@
         text-align: center;
         padding: 20px  0;
     }
+
+    &-primary {
+        display: block;
+        margin: 0 auto;
+        font-weight: bold;
+        background: $primary;
+        color: $white;
+        text-align: center;
+        padding: 16px 143px;
+    }
+}
+
+@include pad {
+.btn {
+    &-md-primary {
+        padding: 10px 77px;
+        font-size: 14px;
+    }   
+   }
 }
