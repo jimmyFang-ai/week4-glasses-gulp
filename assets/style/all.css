@@ -745,7 +745,29 @@ body {
   .co-branded-cards {
     width: 100%; }
     .co-branded-cards-img {
-      max-height: 291px; } }
+      height: 291px; } }
+
+.recommend-cards {
+  width: calc(100% / 4 - 30px);
+  height: 460px;
+  -webkit-box-shadow: 0  2px 6px #00000029;
+          box-shadow: 0  2px 6px #00000029;
+  border-radius: 4px; }
+  .recommend-cards-body {
+    padding: 1rem;
+    height: 204px;
+    border: 1px solid #DEE2E6; }
+  .recommend-cards-img {
+    width: 100%;
+    height: 256px; }
+
+@media (max-width: 768px) {
+  .recommend-cards {
+    width: calc(100% / 2 - 30px); } }
+
+@media (max-width: 576px) {
+  .recommend-cards {
+    width: 100%; } }
 
 .btn-dark {
   display: block;
@@ -850,7 +872,7 @@ body {
 
 @media (max-width: 576px) {
   .bg-co-branded {
-    height: 779px; } }
+    height: 719px; } }
 
 .material-icons {
   font-size: 48px; }
