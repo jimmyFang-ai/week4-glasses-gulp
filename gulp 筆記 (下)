@@ -1,0 +1,54 @@
+ 利用gulp拆分元件CSS及ejs，再分別匯入
+ 
+    ejs (類似template樣板語言)
+
+    layout (共同區塊)
+       -每個葉面都出現的畫面，例如表頭、表尾
+
+
+   app(開發區塊) : 
+        app區塊寫入開發程式碼，dist區塊及時編譯程式碼
+
+        共同區塊寫在 layout.ejs
+        
+        分頁內容分別建立page.html
+
+
+
+     部屬檔案上傳至github
+
+        - master (開發環境) : 上傳開發程式碼 ，輸入git add . (把修改過的檔案加入) → git commit -m "first commit" (更新的版本註解) → git push origin master (推送檔案上傳至github)    
+        - gh-pages(上線環境)  : 先中斷gulp→gulp build →gulp deploy，更新網頁內容
+
+   scss 開發流程:
+        - 減少重工負擔，採取階層化寫法，並方便管理和修改css樣式
+           ex: 
+             css(重複型高):   header { color: red;}  header menu { color: blue;}
+             scss(減少重工):   header {width:200px; height:200px;  menu {color:blie;}}
+
+        -拆分篇  @import: 每隻 Scss 檔專心做一件事情
+             - 先建立個別scss，再統一@import 'scss檔名'匯入，all.scss
+           
+        -工具篇  @mixin: 將常用語法化簡為自己的知識庫
+           ex:  
+            (切成常用的小工具語法並在選擇器標籤用呼叫 @include css樣式名稱)                  
+            @mixin hide-text {
+                text-indent: 101%;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .header h1 {
+                @include hide-text;
+            }
+
+           結構篇 - 如何循序漸進優化網頁架構
+                分別將scss依共同layout.ejs、各個分頁、@mixin、module，分別撰寫，
+                   在統一@import至all.scss→編譯→all.css
+
+           載具篇 - @mixin+@content 設計響應式設計超方便
+                 利用@mixin 工具把所有@media斷點包裝成Scss，並匯入all.scss，在css選擇器@include content(要撰寫的css樣式)
+
+
+
+

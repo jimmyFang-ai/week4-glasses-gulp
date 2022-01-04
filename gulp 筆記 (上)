@@ -1,0 +1,85 @@
+
+ dist 資料夾(寫完靜態程式碼後要上傳必先經過dist編譯整理)
+    - 不能修改裡面所有資料
+    - 是經過編譯整合過的程式碼
+
+
+ app > assets資料夾 (撰寫程式碼和設置圖片、CSS、JS，等靜態資料夾的地方)
+    -  可以撰寫程式碼
+    -  各種靜態檔案放置處
+    -  這專案只能用 SCSS 寫 CSS ，因我們建立的環境是 SCSS 環境
+
+
+ 新增頁面: 
+    -  在app資料夾 裡面新增 html檔案
+
+
+
+  啟用gulp 類似 vue cli server概念
+    - 關機後，如何再開啟 Gulp ，需重新打開終端機，移動資料夾路徑後，再執行 gulp 指令開啟
+    - 在 Gulp 編譯運行時，要輸入新的指令時，必須輸入熱鍵 ctrl+c，就可以關閉 gulp 編譯模式
+    - 修改及變更資料程式碼後，Gulp會立即監控並即時編譯檔案至dist資料夾
+
+
+
+
+1.GitHub Pages 部署網站流程:
+
+    a.先在gitHub開啟新的repositories(網路空間)
+
+    b.開啟Gulp的終端機，並輸入 ctrl+c，中斷終端機
+
+    c.再輸入git指令:
+       git init # 若已經初始化過就可以不用輸入
+       git add .
+       git commit -m "first commit"
+       git remote add origin [GitHub Repositories Url]
+       git branch -M main
+       git push -u origin master// 僅限第一次輸入，往後只需要輸入 git push
+
+
+2.當將 Gulp 原始碼初次部署到 GitHub 之後，可以依照以下兩步驟來更新網站
+
+步驟一：gulp build 進入生產模式
+步驟二：當生產完畢之後接下來只需要輸入 gulp deploy 即可完成 GitHub Pages 部署。
+
+若您是使用 Windows 電腦，以下細節還請留意：
+git commit -m “first commit”，請打成雙引號，而非單引號
+執行完 git push -u origin master 時，系統可能會問你要選擇 1. Web Browser 2. Personal access token 供使用者選擇，還請選擇 1。
+    
+
+3. 完成 GitHub Pages 部署:
+   - master 檔案空間:
+      - 開發程式用的
+
+   - gh-pages 檔案空間(把編譯過的dist資料夾上傳的空間)
+      - 靜態網頁成品的瀏覽
+
+
+4. 修改GitHub Pages 網頁的程式碼資料
+
+  a. 更新 gh-pages 靜態網頁
+   -  在本地端修改程式碼後，進入終端機輸入熱鍵 ctrl+c，就可以關閉 gulp 編譯模式
+   -  輸入 gulp build 進入生產模式
+   -  當生產完畢之後接下來只需要輸入 gulp deploy 即可完成 GitHub Pages 部署。
+
+  b. 更新 master 開發程式碼結構
+   - 開啟終端機輸入gulp，重啟專案，確認是否能運行。
+   - 修改程式碼，並看終端機是否有即時編譯檔案，輸入熱鍵 ctrl+c，就可以關閉 gulp 編譯模式
+   - 輸入git指令
+       git add .
+       git commit -m "修改的版本"
+       git push -u origin master// 僅限第一次輸入，往後只需要輸入 git push
+   - 即可完成修改master的程式碼
+
+
+
+ 製作每週作業要的網站資料夾流程:
+     1. 下載此資料夾https://github.com/hexschool/web-layout-training-gulp，並解壓縮檔案，並重新命名
+     2. 移動到該資料夾，cd 移動到該資料夾，如果移動成功，win 輸入指令dir，可以觀看該資料裡的檔案列表，如下 Win 截圖。
+     3. 輸入指令 npm install 安裝插件
+     4. 輸入指令 gulp 執行，確認專案是否能正常運作
+     5. 開發新的程式碼，並確認本地端網頁可以正常運作
+     6. 即可進行 GitHub Pages 部署流程
+
+    
